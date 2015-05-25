@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='jquery-1.11.0.min.js'></script>
+<script>
+$(document).ready(function(){ 
+ $("#message").click(function() {
+  alert( "Handler for .click() called." );
+  $('.rightcolumn').load('messages.php');
+  return false;
+});
+});
+</script>
+<style>
+
+div.leftcolumn
+{
+  height: 100%;
+  width: 70px;  
+  margin-left:1em;
+  overflow-y:visible;
+  padding-bottom:1px;
+  border-right:solid #000000;
+}  
+div.rightcolumn{
+  float:right;
+  padding-right: 900px;
+}
+</style>
+</head>
+<body>
+<div>
+  <div class="rightcolumn">sfasdfasd wassup</div>
+  <div class="leftcolumn">
+    <a href="messages.php" id='message'>Messages</a><br />
+    <a href="items.php">Items</a><br />
+    <a href="search.php">Search</a><br />
+    <a href="supplies.php">Supplies</a><br />
+    <a href="orders.php">Orders</a><br />
+  </div>
+</div>
+</body>
+</html>
